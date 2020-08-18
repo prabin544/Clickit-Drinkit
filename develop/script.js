@@ -6,26 +6,8 @@ $(document).ready(function () {
 
   var age = {};
 
-  function getCookie(cname) {
-    var name = cname + "=";
-    var ca = document.cookie.split(';');
-    for (var i = 0; i < ca.length; i++) {
-      var c = ca[i];
-      while (c.charAt(0) == ' ') {
-        c = c.substring(1);
-      }
-      if (c.indexOf(name) == 0) {
-        return c.substring(name.length, c.length);
-      }
-    }
-    return "";
-  }
-
-  if (getCookie('popupCookie') != 'submited') {
-
-    $('#ageModal').modal('show');
+  $('#ageModal').modal('show');
     initAge();
-  }
 
   // starts the age verification process
   function initAge() {
@@ -132,8 +114,8 @@ $(document).ready(function () {
   var cocktailUrl = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
 
   $("#searchBtn").click(function () {
+      
       var cocktail = $("#cocktail").val();
-      $("#cocktail").empty();
       apiResponse(cocktail);
   });
       
@@ -194,6 +176,7 @@ $(document).ready(function () {
               }
 
           }
+          $("#ageModal").hide();
           $("#home").hide();
           $('.cocktailSlideShow').show();
           
