@@ -19,3 +19,5 @@ THEN I will be presented with a carousel with choices of specific cocktails and 
 ![Alt text](/assets/images/initialPage.JPG?raw=true "Initial Page")
 ![Alt text](/assets/images/ageValidation.JPG?raw=true "ageValidation")
 
+This application can be browsed at: https://prabin544.github.io/Clickit-Drinkit/
+
